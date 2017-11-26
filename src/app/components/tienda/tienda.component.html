@@ -1,0 +1,39 @@
+
+<a class="boton_activo btn btn-success" [@marcar]="status" (click)="cambiarEstado(status)">Activar botón</a>
+
+<hr/>
+<div>
+  <h3>Animaciones CSS3</h3>
+  <a class="boton_transiciones">Transiciones</a>
+</div>
+<div class="clearfix"></div>
+<div class="caja_animada"></div>
+<hr/>
+
+<h4>jQuery en Angular</h4>
+<button id="botonjq">Mostrar textos</button>
+<p id="textojq" class="alert alert-warning">Texto en jQuery</p>
+<hr/>
+<p>
+  tienda works! {{nombre}}
+</p>
+
+Nombre del parque
+<input type="text" [(ngModel)]="nombreDelParque" (keyup)="mostrarNombre()"/>
+<div *ngIf="miParque">
+  <ol>
+    <li>{{miParque.nombre}}</li>
+    <li>{{miParque.abierto}}</li>
+  </ol>
+</div>
+<hr *ngIf="nombreDelParque"/>
+<p *ngIf="nombreDelParque">
+  <app-parques [nombre]="nombreDelParque" (pasameLosDatos)="verDatosParque($event)"></app-parques>
+</p>
+<hr/>
+
+<app-simple-tiny
+[elementId]="'descripcipnTienda'"
+(onEditorKeyup)="textoRichEditor($event)"
+>
+</app-simple-tiny>

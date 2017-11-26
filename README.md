@@ -1,10 +1,17 @@
-# CursoA5
+# CursoA5 - ngZoo
+
+## Start Mongo service
+Run `mongod.exe`
+
+## Start BackEnd
+cd [path]/backend
+Run `npm start`
+
+## Start FrontEnd
+cd [path]
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
